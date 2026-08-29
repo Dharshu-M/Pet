@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pawfect Care Navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div
+      class="contact-bar bg-dark text-secondary py-1 d-flex align-items-center"
+    >
+      <span class="d-inline">
+        <i class="bi bi-telephone-fill icons me-2 ms-4"></i>+91 98765 43210
+      </span>
+      <span class="d-inline">
+        <i class="bi bi-envelope-open-fill icons me-2 ms-4"></i
+        >pawfectcare@gmail.com
+      </span>
+      <div class="d-flex ms-auto">
+        <span class="text-secondary py-1 me-3">Terms</span>
+        <span class="text-secondary py-1 me-2">Privacy</span>
+        <span
+          class="badge rounded-0 d-flex align-items-center justify-content-center my-2 ms-2 border border-secondary"
+        >
+          <i class="bi bi-facebook icons"></i>
+        </span>
+        <span
+          class="badge rounded-0 d-flex align-items-center justify-content-center my-2 ms-2 border border-secondary"
+        >
+          <i class="bi bi-twitter icons"></i>
+        </span>
+        <span
+          class="badge rounded-0 d-flex align-items-center justify-content-center my-2 ms-2 border border-secondary"
+        >
+          <i class="bi bi-whatsapp icons"></i>
+        </span>
+        <span
+          class="badge rounded-0 d-flex align-items-center justify-content-center my-2 ms-2 me-4 border border-secondary"
+        >
+          <i class="bi bi-instagram icons"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container-fluid d-flex py-0">
+        <div class="navbar-brand d-flex align-items-center">
+          <a href="#" class="text-decoration-none"
+            ><i class="bi bi-heart-pulse-fill icons fs-3"></i
+          ></a>
+          <a href="#" class="navbar-brand fs-2">Pawfect Care</a>
+        </div>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-target="#navexpand"
+          data-bs-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navexpand">
+          <ul class="navbar-nav justify-content-end w-100">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-2 text-dark">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-2 text-dark">Grooming</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-2 text-dark">Hospital</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link ms-2 text-dark">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button
+                type="button"
+                class="btn border rounded-0 ms-3 me-4 apnmt-btn"
+              >
+                Book Appointment
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--
+  Note: background-attachment:fixed only works on a CSS background-image,
+  not on an <img> element's src. Swapped the <img> for a <div> that carries
+  pic1.jpg as a background-image so the fixed/overlap effect actually works.
+  role="img" + aria-label keep it accessible.
+-->
+    <div class="front-pic" role="img" aria-label="Dog grooming and care"></div>
+
+    <div class="container detail">
+      <div class="row del-row g-4">
+        <div class="col-md-4 card">
+          <button class="btn pow"><i class="fa-solid fa-paw"></i></button>
+          <div class="card-title">Dog Walking</div>
+          <div class="card-text">
+            Regular walks that keep tails wagging and energy balanced, led by
+            handlers your dog will actually look forward to seeing.
+          </div>
+          <button class="btn right-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="col-md-4 card">
+          <button class="btn pow"><i class="fa-solid fa-scissors"></i></button>
+          <div class="card-title">Pet Grooming</div>
+          <div class="card-text">
+            Baths, trims, and nail care handled gently, so grooming day feels
+            like a treat instead of a chore.
+          </div>
+          <button class="btn right-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="col-md-4 card">
+          <button class="btn pow">
+            <i class="fa-solid fa-house-medical"></i>
+          </button>
+          <div class="card-title">Health Checkups</div>
+          <div class="card-text">
+            Routine wellness exams and vaccinations from a team that treats
+            every visit like your dog is the only patient that matters.
+          </div>
+          <button class="btn right-btn">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container why-choose">
+      <div class="row align-items-center gy-5">
+        <div class="col-md-5">
+          <img src="pic2.jpg" class="why-img" alt="Happy pug dog" />
+        </div>
+        <div class="col-md-7">
+          <h2 class="why-title">Why Choose Us?</h2>
+          <div class="row gy-4">
+            <div class="col-sm-6 why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-stethoscope"></i>
+              </div>
+              <div>
+                <div class="why-item-title">Care Advices</div>
+                <div class="why-item-text">
+                  Practical guidance on feeding, routines, and everyday habits
+                  that keep your dog healthy between visits.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 why-item">
+              <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <div class="why-item-title">Customer Supports</div>
+                <div class="why-item-text">
+                  A team that's easy to reach and quick to respond, whenever you
+                  have a question about your pet's care.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+              </div>
+              <div>
+                <div class="why-item-title">Emergency Services</div>
+                <div class="why-item-text">
+                  Fast, dependable care when it matters most, with a team ready
+                  to respond to urgent situations.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 why-item">
+              <div class="why-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <div>
+                <div class="why-item-title">Veterinary Help</div>
+                <div class="why-item-text">
+                  Experienced vets who take the time to explain what's going on
+                  and what comes next for your dog.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container team-section">
+      <div class="text-center mb-5 reveal reveal-down">
+        <h2 class="team-title">Meet Our Expert Team</h2>
+        <div class="plans-divider">
+          <span class="dash"></span>
+          <span class="line"></span>
+          <span class="dash"></span>
+        </div>
+        <p class="team-subtitle">
+          Dedicated professionals who treat your pets like family
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="pic10.jpg" alt="Dr. Ananya Rao" class="team-img" />
+              <div class="team-socials">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5 class="team-name">Dr. Ananya Rao</h5>
+              <p class="team-role">Chief Veterinarian</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="pic11.jpg" alt="Dr. Karan Mehta" class="team-img" />
+              <div class="team-socials">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5 class="team-name">Dr. Karan Mehta</h5>
+              <p class="team-role">Surgical Specialist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="pic10.jpg" alt="Priya Nair" class="team-img" />
+              <div class="team-socials">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5 class="team-name">Priya Nair</h5>
+              <p class="team-role">Senior Groomer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="team-card reveal">
+            <div class="team-img-wrap">
+              <img src="pic11.jpg" alt="Dr. Vikram Singh" class="team-img" />
+              <div class="team-socials">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="team-info">
+              <h5 class="team-name">Dr. Vikram Singh</h5>
+              <p class="team-role">Emergency Care Lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="container accordion custom-accordion" id="petAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            How to train your pet dog?
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          data-bs-parent="#petAccordion"
+        >
+          <div class="accordion-body">
+            <ol>
+              <li>Far far away, behind the word mountains</li>
+              <li>Consonantia, there live the blind texts</li>
+              <li>When she reached the first hills of the Italic Mountains</li>
+              <li>Bookmarksgrove, the headline of Alphabet Village</li>
+              <li>Separated they live in Bookmarksgrove right</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            How to manage your pets?
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#petAccordion"
+        >
+          <div class="accordion-body">
+            <ol>
+              <li>
+                Set a consistent daily routine for feeding, walks, and playtime
+              </li>
+              <li>Keep a simple log of meals, medication, and vet visits</li>
+              <li>Childproof and petproof your home to avoid accidents</li>
+              <li>
+                Schedule regular vet checkups even when your pet seems healthy
+              </li>
+              <li>Budget monthly for food, supplies, and unexpected care</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            What is the best grooming for your pets?
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#petAccordion"
+        >
+          <div class="accordion-body">
+            <ol>
+              <li>
+                Brush your pet's coat regularly to prevent matting and shedding
+              </li>
+              <li>
+                Trim nails every few weeks to keep them at a comfortable length
+              </li>
+              <li>Clean ears and check for signs of infection or irritation</li>
+              <li>
+                Bathe only as needed, using shampoo made for your pet's skin
+                type
+              </li>
+              <li>Brush teeth or use dental chews to support oral health</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item last-acor">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseFour"
+            aria-expanded="false"
+            aria-controls="collapseFour"
+          >
+            What are those requirements for sitting pets?
+          </button>
+        </h2>
+        <div
+          id="collapseFour"
+          class="accordion-collapse collapse"
+          data-bs-parent="#petAccordion"
+        >
+          <div class="accordion-body">
+            <ol>
+              <li>
+                Provide clear written instructions on feeding times and portions
+              </li>
+              <li>
+                Share emergency contacts, including your vet's phone number
+              </li>
+              <li>List any medications with dosage and schedule</li>
+              <li>
+                Point out favorite toys, hiding spots, and comfort routines
+              </li>
+              <li>Leave a way to reach you in case of an emergency</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wrap">
+  <div
+    class="pic4"
+    role="img"
+    aria-label="Dogs together at Pawfect Care"
+  ></div>
+
+  <div class="container st-section">
+    <div class="text-center mb-5">
+      <h2 class="st-title text-white">Our Achievements</h2>
+     
+      <p class="st-subtitle">
+        Numbers that reflect the trust pet parents place in us
+      </p>
+    </div>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-6">
+        <div class="st-card">
+          <i class="fa-solid fa-paw st-icon"></i>
+          <div class="st-number">1200+</div>
+          <div class="st-label">Happy Pets</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="st-card">
+          <i class="fa-solid fa-user-doctor st-icon"></i>
+          <div class="st-number">25+</div>
+          <div class="st-label">Expert Vets</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="st-card">
+          <i class="fa-solid fa-scissors st-icon"></i>
+          <div class="st-number">3000+</div>
+          <div class="st-label">Grooming Sessions</div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="st-card">
+          <i class="fa-solid fa-award st-icon"></i>
+          <div class="st-number">10+</div>
+          <div class="st-label">Years Of Service</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container plans-section">
+  <div class="text-center mb-5">
+    <h2 class="plans-title">Choose Your Plan</h2>
+    <div class="plans-divider">
+      <span class="dash"></span>
+      <span class="line"></span>
+      <span class="dash"></span>
+    </div>
+    <p class="plans-subtitle">
+      Simple pricing for every stage of your pet's care
+    </p>
+  </div>
+
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-4">
+      <div class="plan-card">
+        <div class="plan-name">Basic</div>
+        <div class="plan-price">
+          ₹999<span class="plan-period">/month</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Monthly wellness checkup</li>
+          <li><i class="fa-solid fa-check"></i> One grooming session</li>
+          <li><i class="fa-solid fa-check"></i> Email support</li>
+          <li class="plan-feature-off"><i class="fa-solid fa-xmark"></i> Emergency visits</li>
+          <li class="plan-feature-off"><i class="fa-solid fa-xmark"></i> Home pickup</li>
+        </ul>
+        <button class="btn plan-btn">Get Started</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="plan-card plan-card-featured">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Standard</div>
+        <div class="plan-price">
+          ₹1,999<span class="plan-period">/month</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Bi-weekly wellness checkup</li>
+          <li><i class="fa-solid fa-check"></i> Two grooming sessions</li>
+          <li><i class="fa-solid fa-check"></i> Priority phone support</li>
+          <li><i class="fa-solid fa-check"></i> Emergency visits</li>
+          <li class="plan-feature-off"><i class="fa-solid fa-xmark"></i> Home pickup</li>
+        </ul>
+        <button class="btn plan-btn plan-btn-featured">Get Started</button>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="plan-card">
+        <div class="plan-name">Premium</div>
+        <div class="plan-price">
+          ₹3,499<span class="plan-period">/month</span>
+        </div>
+        <ul class="plan-features">
+          <li><i class="fa-solid fa-check"></i> Weekly wellness checkup</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited grooming sessions</li>
+          <li><i class="fa-solid fa-check"></i> 24/7 priority support</li>
+          <li><i class="fa-solid fa-check"></i> Emergency visits</li>
+          <li><i class="fa-solid fa-check"></i> Free home pickup</li>
+        </ul>
+        <button class="btn plan-btn">Get Started</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pic6-wrap">
+  <div class="pic6" role="img" aria-label="Vet examining a dog"></div>
+
+  <div class="consult-panel">
+    <h2 class="consult-title">Free Consultation</h2>
+
+    <form class="consult-form">
+      <select class="consult-input">
+        <option selected disabled>Select services</option>
+        <option>Grooming</option>
+        <option>Health Checkup</option>
+        <option>Vaccination</option>
+        <option>Pet Sitting</option>
+      </select>
+
+      <div class="consult-row">
+        <input type="text" class="consult-input" placeholder="Your Name" />
+        <input type="tel" class="consult-input" placeholder="Phone Number" />
+      </div>
+
+      <div class="consult-row">
+        <input type="date" class="consult-input" />
+        <input type="time" class="consult-input" />
+      </div>
+
+      <textarea class="consult-input consult-textarea" placeholder="Message"></textarea>
+
+      <button type="submit" class="consult-btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<div class="container testimonial-section">
+  <div class="text-center mb-5">
+    <h2 class="testimonial-title">What Pet Parents Say</h2>
+    <div class="plans-divider">
+      <span class="dash"></span>
+      <span class="line"></span>
+      <span class="dash"></span>
+    </div>
+    <p class="testimonial-subtitle">
+      Real experiences from the pets and families we've cared for
+    </p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left testimonial-quote-icon"></i>
+        <p class="testimonial-text">
+          The team treated my golden retriever like their own. Honest advice,
+          zero pressure, and the checkup felt genuinely thorough.
+        </p>
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="testimonial-author">
+          <img src="pic3.jpg" alt="Riya Sharma" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Riya Sharma</div>
+            <div class="testimonial-pet">Owner of Bruno, Golden Retriever</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left testimonial-quote-icon"></i>
+        <p class="testimonial-text">
+          Grooming day used to be a nightmare. Now my cat actually walks in
+          calmly. The staff clearly know how to handle nervous pets.
+        </p>
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <div class="testimonial-author">
+          <img src="pic4.jpg" alt="Arjun Mehta" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Arjun Mehta</div>
+            <div class="testimonial-pet">Owner of Mia, Persian Cat</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left testimonial-quote-icon"></i>
+        <p class="testimonial-text">
+          We had an emergency late at night and they responded within
+          minutes. That kind of reliability is hard to find.
+        </p>
+        <div class="testimonial-rating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="testimonial-author">
+          <img src="pic5.jpg"  class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Sneha Iyer</div>
+            <div class="testimonial-pet">Owner of Rocky, Labrador</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <h4 class="d-flex align-items-center mb-3">
+          <i class="bi bi-heart-pulse-fill me-2"></i> Pawfect Care
+        </h4>
+        <p class="text-secondary">
+          Compassionate grooming, wellness, and emergency care for your pets,
+          delivered by a team that treats every visit like it matters.
+        </p>
+        <div class="d-flex">
+          <span class="badge rounded-0 d-flex align-items-center justify-content-center border border-secondary me-2 p-2">
+            <i class="bi bi-facebook"></i>
+          </span>
+          <span class="badge rounded-0 d-flex align-items-center justify-content-center border border-secondary me-2 p-2">
+            <i class="bi bi-twitter"></i>
+          </span>
+          <span class="badge rounded-0 d-flex align-items-center justify-content-center border border-secondary me-2 p-2">
+            <i class="bi bi-whatsapp"></i>
+          </span>
+          <span class="badge rounded-0 d-flex align-items-center justify-content-center border border-secondary p-2">
+            <i class="bi bi-instagram"></i>
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-uppercase mb-3">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">About</a></li>
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Grooming</a></li>
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Hospital</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase mb-3">Our Services</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Dog Walking</a></li>
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Pet Grooming</a></li>
+          <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Health Checkups</a></li>
+          <li><a href="#" class="text-secondary text-decoration-none">Emergency Care</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase mb-3">Contact Us</h6>
+        <ul class="list-unstyled text-secondary">
+          <li class="mb-2">
+            <i class="bi bi-geo-alt-fill me-2"></i>123 Pet Street, Madurai, TN
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-telephone-fill me-2"></i>+91 98765 43210
+          </li>
+          <li>
+            <i class="bi bi-envelope-open-fill me-2"></i>pawfectcare@gmail.com
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="border-secondary my-4" />
+
+    
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ===================== NEW: SCROLL REVEAL ANIMATION SCRIPT ===================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var revealEls = document.querySelectorAll(".reveal");
+
+        if (!("IntersectionObserver" in window)) {
+          // Fallback: just show everything if browser doesn't support it
+          revealEls.forEach(function (el) {
+            el.classList.add("active");
+          });
+          return;
+        }
+
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.15,
+            rootMargin: "0px 0px -60px 0px",
+          }
+        );
+
+        revealEls.forEach(function (el) {
+          observer.observe(el);
+        });
+      });
+    </script>
+    <!-- ===================== END: SCROLL REVEAL ANIMATION SCRIPT ===================== -->
+  </body>
+</html>
