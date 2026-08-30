@@ -1,0 +1,141 @@
+:root {
+  --primary: #6b7a3a;
+  --primary-dark: #4d5a29;
+  --tint: #eef1e6;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { overflow-x: hidden; font-family: "Segoe UI", Arial, sans-serif; }
+
+.icons { color: var(--primary); }
+.badge { background: transparent; border: white; }
+
+.apnmt-btn { background: var(--primary); color: white; transition: background 0.2s ease; }
+.apnmt-btn:hover { background: var(--primary-dark); color: white; }
+
+.nav-link.text-dark:hover, .nav-link.active-link { color: var(--primary) !important; }
+.navbar-brand { color: var(--primary-dark); }
+
+.badge.border-secondary:hover { background: var(--primary); border-color: var(--primary) !important; }
+.badge.border-secondary:hover .icons { color: white; }
+
+/* Hero */
+.page-hero {
+  position: relative;
+  height: 50vh;
+  min-height: 340px;
+  background-image: linear-gradient(rgba(20, 25, 10, 0.6), rgba(20, 25, 10, 0.6)), url("../pic9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-hero-overlay {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+.page-eyebrow { text-transform: uppercase; letter-spacing: 2px; font-weight: 700; font-size: 0.85rem; color: #d9e0c4; margin-bottom: 0.75rem; }
+.page-hero-title { font-size: 2.6rem; font-weight: 800; max-width: 760px; text-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+.page-hero-sub { max-width: 620px; margin-top: 1rem; font-size: 1.05rem; color: #f1f3ea; }
+
+/* Emergency strip */
+.emergency-strip {
+  background: var(--primary-dark);
+  padding: 1.5rem 0;
+}
+.emergency-icon { color: #fff; font-size: 2rem; }
+.emergency-title { color: #fff; font-weight: 700; font-size: 1.05rem; }
+.emergency-sub { color: #d9e0c4; font-size: 0.85rem; }
+.emergency-btn {
+  background: #fff;
+  color: var(--primary-dark);
+  font-weight: 700;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  border: none;
+}
+.emergency-btn:hover { background: var(--tint); color: var(--primary-dark); }
+
+/* Section labels */
+.section-eyebrow { text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; font-size: 0.8rem; color: var(--primary); margin-bottom: 0.5rem; text-align: center; }
+.section-eyebrow.text-start { text-align: left; }
+.section-title { font-size: 2rem; font-weight: 800; color: #222; text-align: center; }
+.section-title.text-start { text-align: left; }
+
+/* Facilities */
+.facilities-section { padding: 5rem 0; }
+.facility-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.25rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  transition: transform 0.2s ease;
+}
+.facility-card:hover { transform: translateY(-6px); }
+.facility-icon {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--tint); color: var(--primary);
+  font-size: 24px; display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+.facility-title { font-size: 1.1rem; font-weight: 700; color: #222; margin-bottom: 0.5rem; }
+.facility-text { color: #6b6b6b; font-size: 0.9rem; line-height: 1.6; }
+
+/* Visit section */
+.visit-section { padding-bottom: 5rem; }
+.visit-list { list-style: none; padding: 0; margin-top: 1.25rem; }
+.visit-list li {
+  color: #555;
+  margin-bottom: 0.9rem;
+  line-height: 1.5;
+  padding-left: 0.25rem;
+}
+.visit-list li i { color: var(--primary); margin-right: 10px; }
+
+.visit-note {
+  background: var(--tint);
+  border-radius: 12px;
+  padding: 2rem;
+}
+.visit-note-title { color: var(--primary-dark); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.75rem; }
+.visit-note-text { color: #555; line-height: 1.6; }
+
+/* CTA */
+.cta-band { background: var(--primary); padding: 3.5rem 0; text-align: center; }
+.cta-title { color: #fff; font-size: 1.9rem; font-weight: 800; margin-bottom: 0.5rem; }
+.cta-text { color: #eef1e6; margin-bottom: 1.5rem; }
+.cta-btn {
+  background: #fff; color: var(--primary-dark); font-weight: 700;
+  padding: 0.85rem 2.25rem; border-radius: 6px; border: none;
+  transition: transform 0.2s ease;
+}
+.cta-btn:hover { transform: translateY(-3px); }
+
+/* Responsive */
+@media (max-width: 991px) {
+  .navbar { position: relative; }
+  .navbar-collapse {
+    position: absolute; top: 100%; left: 0; width: 100%;
+    background: #fff; box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+    padding: 1rem 1.5rem 1.5rem; z-index: 1050;
+  }
+  .navbar-nav { text-align: left; }
+  .navbar-nav .nav-link { padding: 0.6rem 0; }
+  .apnmt-btn { margin-top: 0.75rem; width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .contact-bar { display: none !important; }
+  .page-hero-title { font-size: 1.9rem; }
+  .page-hero { height: 45vh; }
+  .facilities-section, .visit-section { padding: 3.5rem 0; }
+  .section-title { font-size: 1.6rem; }
+  .emergency-strip .d-flex.flex-wrap { justify-content: center; text-align: center; }
+}
